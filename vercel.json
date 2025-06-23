@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/vercel.ts",  // <-- 指向根目录下的 api/vercel.ts
+      "src": "api/vercel.ts",
       "use": "@vercel/node",
       "config": {
         "maxLambdaSize": "45mb"
@@ -12,11 +12,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/vercel.ts" // <-- 路由到由 api/vercel.ts 构建的函数
+      "dest": "/api/vercel.ts"
     }
   ],
   "functions": {
-    "api/vercel.ts": {        // <-- 针对 api/vercel.ts 函数的配置
+    "api/vercel.ts": {
       "maxDuration": 30,
       "memory": 1024
     }

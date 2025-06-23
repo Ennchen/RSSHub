@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "lib/index.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "maxLambdaSize": "45mb"
+            }
         }
     ],
     "routes": [
@@ -11,5 +14,11 @@
             "src": "/(.*)",
             "dest": "lib/index.js"
         }
-    ]
+    ],
+    "functions": {
+        "lib/index.js": {
+            "maxDuration": 30,
+            "memory": 1024
+        }
+    }
 }

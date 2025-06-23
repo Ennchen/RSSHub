@@ -1,24 +1,24 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "lib/index.js",
-            "use": "@vercel/node",
-            "config": {
-                "maxLambdaSize": "45mb"
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "lib/index.js"
-        }
-    ],
-    "functions": {
-        "lib/index.js": {
-            "maxDuration": 30,
-            "memory": 1024
-        }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/vercel.ts",  // <-- 指向根目录下的 api/vercel.ts
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "45mb"
+      }
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/vercel.ts" // <-- 路由到由 api/vercel.ts 构建的函数
+    }
+  ],
+  "functions": {
+    "api/vercel.ts": {        // <-- 针对 api/vercel.ts 函数的配置
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  }
 }

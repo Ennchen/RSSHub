@@ -1,5 +1,15 @@
 {
-    "framework": null,
-    "github": { "silent": true },
-    "routes": [{ "src": "/.*", "dest": "/api/vercel.ts" }]
+    "version": 2,
+    "builds": [
+        {
+            "src": "lib/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "lib/index.js"
+        }
+    ]
 }

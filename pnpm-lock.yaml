@@ -52,7 +52,7 @@ importers:
         version: 1.15.0(hono@4.8.4)
       '@hono/zod-openapi':
         specifier: 0.19.9
-        version: 0.19.9(hono@4.8.4)(zod@3.25.75)
+        version: 0.19.9(hono@4.8.4)(zod@3.25.76)
       '@notionhq/client':
         specifier: 4.0.0
         version: 4.0.0
@@ -138,8 +138,8 @@ importers:
         specifier: 4.0.3
         version: 4.0.3
       googleapis:
-        specifier: 150.0.1
-        version: 150.0.1
+        specifier: 152.0.0
+        version: 152.0.0
       hono:
         specifier: 4.8.4
         version: 4.8.4
@@ -291,8 +291,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0
       zod:
-        specifier: 3.25.75
-        version: 3.25.75
+        specifier: 3.25.76
+        version: 3.25.76
     devDependencies:
       '@babel/preset-env':
         specifier: 7.28.0
@@ -3793,12 +3793,12 @@ packages:
     resolution: {integrity: sha512-rcX58I7nqpu4mbKztFeOAObbomBbHU2oIb/d3tJfF3dizGSApqtSwYJigGCooHdnMyQBIw8BrWyK96w3YXgr6A==}
     engines: {node: '>=14'}
 
-  googleapis-common@8.0.2-rc.0:
-    resolution: {integrity: sha512-JTcxRvmFa9Ec1uyfMEimEMeeKq1sHNZX3vn2qmoUMtnvixXXvcqTcbDZvEZXkEWpGlPlOf4joyep6/qs0BrLyg==}
+  googleapis-common@8.0.0:
+    resolution: {integrity: sha512-66if47It7y+Sab3HMkwEXx1kCq9qUC9px8ZXoj1CMrmLmUw81GpbnsNlXnlyZyGbGPGcj+tDD9XsZ23m7GLaJQ==}
     engines: {node: '>=18.0.0'}
 
-  googleapis@150.0.1:
-    resolution: {integrity: sha512-9Wa9vm3WtDpss0VFBHsbZWcoRccpOSWdpz7YIfb1LBXopZJEg/Zc8ymmaSgvDkP4FhN+pqPS9nZjO7REAJWSUg==}
+  googleapis@152.0.0:
+    resolution: {integrity: sha512-i/eo7ytwdWv9vONIY/MdUkSYOnGTtTMLP1y4eaTazGVArlmkH47Th07HLz8EYgIwsixqTR48bxAcdsGd9yoZqg==}
     engines: {node: '>=18'}
 
   got@12.6.1:
@@ -6149,8 +6149,8 @@ packages:
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
-  zod@3.25.75:
-    resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
 snapshots:
 
@@ -6167,10 +6167,10 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 10.4.3
 
-  '@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.75)':
+  '@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.76)':
     dependencies:
       openapi3-ts: 4.5.0
-      zod: 3.25.75
+      zod: 3.25.76
 
   '@babel/code-frame@7.0.0':
     dependencies:
@@ -7196,18 +7196,18 @@ snapshots:
     dependencies:
       hono: 4.8.4
 
-  '@hono/zod-openapi@0.19.9(hono@4.8.4)(zod@3.25.75)':
+  '@hono/zod-openapi@0.19.9(hono@4.8.4)(zod@3.25.76)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 7.3.4(zod@3.25.75)
-      '@hono/zod-validator': 0.7.0(hono@4.8.4)(zod@3.25.75)
+      '@asteasolutions/zod-to-openapi': 7.3.4(zod@3.25.76)
+      '@hono/zod-validator': 0.7.0(hono@4.8.4)(zod@3.25.76)
       hono: 4.8.4
       openapi3-ts: 4.5.0
-      zod: 3.25.75
+      zod: 3.25.76
 
-  '@hono/zod-validator@0.7.0(hono@4.8.4)(zod@3.25.75)':
+  '@hono/zod-validator@0.7.0(hono@4.8.4)(zod@3.25.76)':
     dependencies:
       hono: 4.8.4
-      zod: 3.25.75
+      zod: 3.25.76
 
   '@humanfs/core@0.19.1': {}
 
@@ -8771,7 +8771,7 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1439962
       mitt: 3.0.1
-      zod: 3.25.75
+      zod: 3.25.76
 
   ci-info@4.2.0: {}
 
@@ -9818,7 +9818,7 @@ snapshots:
 
   google-logging-utils@1.1.1: {}
 
-  googleapis-common@8.0.2-rc.0:
+  googleapis-common@8.0.0:
     dependencies:
       extend: 3.0.2
       gaxios: 7.1.1
@@ -9828,10 +9828,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  googleapis@150.0.1:
+  googleapis@152.0.0:
     dependencies:
       google-auth-library: 10.1.0
-      googleapis-common: 8.0.2-rc.0
+      googleapis-common: 8.0.0
     transitivePeerDependencies:
       - supports-color
 
@@ -12382,4 +12382,4 @@ snapshots:
 
   zod@3.24.1: {}
 
-  zod@3.25.75: {}
+  zod@3.25.76: {}
